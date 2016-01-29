@@ -25,6 +25,7 @@
 /* log a message */
 - (void)logLevel:(CDVInvokedUrlCommand*)command
 {
+    [self.commandDelegate runInBackground:^{
     id level = [command argumentAtIndex:0];
     id message = [command argumentAtIndex:1];
 
@@ -32,6 +33,7 @@
         NSLog(@"%@", message);
     } else {
         NSLog(@"%@: %@", level, message);
+    }
     }
 }
 
