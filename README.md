@@ -19,6 +19,8 @@
 
 # cordova-plugin-console
 
+# samikha:  Change the official one to run in a background thread on iOS
+
 
 This plugin is meant to ensure that console.log() is as useful as it can be.
 It adds additional function for iOS, Ubuntu, Windows Phone 8, and Windows. If
