@@ -34,7 +34,7 @@
     } else {
         NSLog(@"%@: %@", level, message);
     }
-    }
+    }];
 }
 
 @end
